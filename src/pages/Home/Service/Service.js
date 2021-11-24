@@ -11,7 +11,7 @@ const Service = ({ service }) => {
                 <p className="text-gray-500 poppins text-sm text-center">{description}</p>
                 <h3 className="text-gray-700 poppins text-2xl text-center font-bold">{price}$</h3>
                 <Link to={`/order/${_id}`}>
-                    <button className="bg-indigo-400 hover:bg-indigo-500 text-white px-8 py-2 duration-300 hover:scale-110 focus:outline-none poppins rounded-full mt-4 transform transition">More Details</button>
+                    <button className="bg-red-400 hover:bg-red-500 text-white px-8 py-2 duration-300 hover:scale-110 focus:outline-none poppins rounded-full mt-4 transform transition">More Details</button>
                 </Link>
             </div>
         </div>

@@ -1,5 +1,35 @@
 .banner_item {
   height: 600px;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
 }
 .banner_description {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  text-align: center;
+  margin: auto;
+}
+.banner_description h2 {
+  font-size: 55px;
+}
+.banner_description h5 {
+  font-size: 20px;
+}
+
+@media (max-width: 575.99px) {
+  .banner_item {
+    height: 500px;
+    background-position: bottom !important;
+    background-size: auto !important;
+  }
+  .banner_description h2 {
+    font-size: 42px;
+  }
+  .banner_description h5 {
+    font-size: 16px;
+  }
 }

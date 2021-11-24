@@ -16,14 +16,14 @@ const AddService = () => {
             })
     };
     return (
-        <div className="add-service bg-gray-500 w-6/12 mx-auto mb-10 pb-3 rounded-lg">
-            <h2 className="my-5 pt-3 text-2xl font-bold text-gray-700">Please Add a service</h2>
+        <div className="add-service bg-gray-500 md:w-6/12 mx-auto mb-10 pb-3 rounded-lg">
+            <h2 className="my-5 pt-3 text-2xl font-bold text-white">Please Add a service</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <input className="h-10 rounded-lg" type="text" {...register("title")} placeholder="Title" />
-                <textarea className="rounded-lg" {...register("description")} placeholder="Description" />
-                <input className="h-10 rounded-lg" type="number" {...register("price")} placeholder="Price" />
-                <input className="h-10 rounded-lg" {...register("img")} placeholder="image url" />
-                <input className="h-8 rounded-lg bg-indigo-700" type="submit" />
+                <input className="h-10 rounded pl-2" type="text" {...register("title")} placeholder="Title" />
+                <textarea className="rounded pl-2" {...register("description")} placeholder="Description" />
+                <input className="h-10 rounded pl-2" type="number" {...register("price")} placeholder="Price" />
+                <input className="h-10 rounded pl-2" {...register("img")} placeholder="image url" />
+                <input className=" rounded bg-red-400 hover:bg-red-500 text-white px-8 py-2 duration-300 hover:scale-100 focus:outline-none poppins transform transition" type="submit" />
             </form>
         </div>
     );

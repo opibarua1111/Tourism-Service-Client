@@ -17,8 +17,9 @@ const Login = () => {
             .finally(() => setIsLoading(false));
     }
     return (
-        <div className="w-1/5 mx-auto mt-5">
-            <Button onClick={handleGoogleLogin} className="bg-green-400 hover:bg-green-500 text-white px-8 py-2 duration-300 hover:scale-110 focus:outline-none poppins rounded-full mt-0 transform transition mb-2">Google Sign In</Button>
+        <div className="lg:w-1/5 mx-auto mt-5">
+            <Button onClick={handleGoogleLogin} className=" p-4 bg-green-500 hover:bg-green-600 duration-300 hover:scale-110 focus:outline-none poppins mt-0 transform transition mb-2 rounded-full">
+                <i class="fab fa-google-plus-g text-5xl  text-white"></i></Button>
         </div>
     );
 };

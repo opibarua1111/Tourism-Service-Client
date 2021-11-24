@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import useAuth from '../../hooks/useAuth';
+import { Nav, Navbar } from 'react-bootstrap';
 
 const MyOrder = ({ manageAllOrder }) => {
     const [orders, setOrders] = useState();
