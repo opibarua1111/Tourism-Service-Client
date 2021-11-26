@@ -15,7 +15,6 @@ const Order = () => {
             .then(data => setService(data));
     }, [])
     const title = service.title;
-    console.log(title);
     const onSubmit = data => {
         const dataInfo = {
             ...data,

@@ -12,10 +12,8 @@ const Header = () => {
         <>
             <Navbar variant="dark" fixed="top" sticky="top" collapseOnSelect expand="lg" className="bg-red-400">
                 <Container>
-                    <Navbar.Brand href="#home">
-                        <Nav.Link to="/home#home" className="text-white">
-                            <img src="https://i.ibb.co/By8JxgC/tourism-icon.png" width="20%" className="inline-block" alt="" />Tourism
-                        </Nav.Link>
+                    <Navbar.Brand to="/home#home" className="text-white">
+                        <img src="https://i.ibb.co/By8JxgC/tourism-icon.png" width="20%" className="inline-block" alt="" />Tourism
                     </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">

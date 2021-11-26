@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Nav, Navbar } from 'react-bootstrap';
 
 const MyOrder = ({ manageAllOrder }) => {
     const [orders, setOrders] = useState();
@@ -25,21 +24,15 @@ const MyOrder = ({ manageAllOrder }) => {
             })
     }
     return (
-        <div>
-            <div className="grid grid-cols-7 gap-1 py-2 border-b border-gray-600">
-                <div>{title}</div>
-                <div>{Name}</div>
-                <div>{email}</div>
-                <div>{city}</div>
-                <div>{phone}</div>
-                <div>{status}</div>
-                <div>
-                    <Navbar className="text-center flex justify-center" title="Delete your order" id="collasible-nav-dropdown">
-                        <Nav className="text-center cursor-pointer" onClick={() => handleDeleteOrder(_id)}>Delete</Nav>
-                    </Navbar>
-                </div>
-            </div>
-        </div>
+        <tr>
+            <th scope="row">{title}</th>
+            <td>{Name}</td>
+            <td>{email}</td>
+            <td>{city}</td>
+            <td>{phone}</td>
+            <td>{status}</td>
+            <td className="text-center cursor-pointer hover:text-red-600" onClick={() => handleDeleteOrder(_id)}>Delete</td>
+        </tr>
     );
 };
 
