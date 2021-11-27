@@ -7,5 +7,8 @@ Live site link:-https://tourism-5bccb.web.app/
 ### Purposes -
 
 - best tourism
-- good support
-- best places
+- Users can see his/her booked offers and want to delete
+- Admin can add an offer, manage all offers, and can manage all booked offers
+- Admin can approved offer Which is booked.
+- best Tourism website Overalls
+- Visit this site.
