@@ -51,11 +51,11 @@ const ManageAllOrders = () => {
                         <td>{manageAllOrder.phone}</td>
                         <td>{manageAllOrder.status}</td>
                         <td>
-                            <NavDropdown title="Update" id="collasible-nav-dropdown">
+                            <NavDropdown className="text-green-900 font-bold" title="Update" id="collasible-nav-dropdown">
                                 {manageAllOrder?.status === "pending" ?
-                                    <NavDropdown.Item onClick={() => handleUpdateOrder(manageAllOrder._id, "active")}>Active</NavDropdown.Item>
+                                    <NavDropdown.Item className="text-green-900 font-bold" onClick={() => handleUpdateOrder(manageAllOrder._id, "active")}>Active</NavDropdown.Item>
                                     :
-                                    <NavDropdown.Item onClick={() => handleUpdateOrder(manageAllOrder._id, "pending")}>pending</NavDropdown.Item>
+                                    <NavDropdown.Item className="text-yellow-500 font-bold" onClick={() => handleUpdateOrder(manageAllOrder._id, "pending")}>pending</NavDropdown.Item>
                                 }
                             </NavDropdown>
                         </td>

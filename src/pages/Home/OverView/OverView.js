@@ -12,13 +12,13 @@ const OverView = () => {
                 </div>
                 <div className="bg-purple-200 p-7 rounded-lg">
                     <i className="far fa-clone text-indigo-500 text-7xl"></i>
-                    <h3 className="text-2xl normal">120</h3>
+                    <h3 className="text-2xl normal">3+</h3>
                     <h3 className="text-3xl font-bold">Certificates</h3>
                 </div>
                 <div className="bg-purple-200 p-7 rounded-lg">
                     <i className="fas fa-suitcase-rolling text-indigo-500 text-7xl"></i>
-                    <h3 className="text-2xl normal">7000+</h3>
-                    <h3 className="text-3xl font-bold">Happy Tourism</h3>
+                    <h3 className="text-2xl normal">10+</h3>
+                    <h3 className="text-3xl font-bold">Activity</h3>
                 </div>
             </div>
         </div>
